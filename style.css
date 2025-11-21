@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #e0e0e0; /* Teks terang */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    color: #ff6b6b; /* Warna merah muda lembut untuk kesedihan */
+    text-align: center;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-style: italic;
+    border-left: 5px solid #ff6b6b;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #aaaaaa;
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 30px;
+    /* Membuat video responsif */
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #666666;
+    margin-top: 50px;
+    border-top: 1px solid #333333;
+}
+
+/* Styling untuk efek mengetik */
+/* Styling untuk efek mengetik */
+.type-target {
+    /* Set lebar teks agar tidak langsung memenuhi baris */
+    width: 100%; 
+    overflow: hidden; /* Penting! Menyembunyikan teks sebelum diketik */
+    border-right: 3px solid #ff6b6b; /* Kursor vertikal */
+    white-space: pre-wrap; /* Memungkinkan wrapping baris */
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Gunakan font yang sama atau monospace */
+    min-height: 1.5em; /* Menjaga ruang agar tidak bergeser */
+}
+
+/* Animasi kursor berkedip */
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #ff6b6b; }
+}
